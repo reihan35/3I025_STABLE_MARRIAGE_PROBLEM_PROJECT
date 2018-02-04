@@ -49,10 +49,9 @@ def createMatrices(s1, s2):
     # for s in l: s vaut successivement chacun des elements de l (pas les indices, les elements)
 
 '''
-m1, nbEtu, m2, nbParcours = createMatrices("TestPrefEtu.txt", "TestPrefSpe.txt")
+m1, nbEtu, m2, nbParcours = createMatrices("prefEtu.txt", "prefSpe.txt")
 for line in m2:
 	for elem in line:
-		print(elem)
-print(nbEtu)
-print(nbParcours)
+		print(elem, end = " ")
+	print("")
 '''

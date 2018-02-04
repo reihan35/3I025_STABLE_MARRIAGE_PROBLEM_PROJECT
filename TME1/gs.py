@@ -12,6 +12,7 @@ def gs_etudiants(s1,s2):
 	#tant qu'il existe un etudiant non affecté
 	while False in aff: 		
 		etu = aff.index(False)
+		
 		if nbProp[etu] < nbPar: # cet étudiant n'a pas proposé à tous les masters
 			master = m1[etu][1 + nbProp[etu]] # on recupere un master dans son ordre de préférence
 			nbProp[etu] += 1
@@ -25,9 +26,12 @@ def gs_etudiants(s1,s2):
 					if (mariages[i] == master):
 						autre_etu = i # un étudiant affecté au master demandé par etu
 						if (m2[master].index(autre_etu) > m2[master].index(etu)):#On verifie si cet étudiant est 'moins bien' que etu
+							mariages[autre_etu] = -1
 							mariages[etu]=master;
 							aff[etu]=True;
 							aff[autre_etu]=False;#l'etudiant qui etait moins bien n'est plus affecte a aucun master
+							break
+							
 	return mariages
 
 
@@ -74,10 +78,10 @@ def gs_parcours(s1, s2):
 	
 	return mariages
 
-mariage1 = gs_etudiants("TestPrefEtu.txt", "TestPrefSpe.txt")
-mariage2 = gs_parcours("TestPrefEtu.txt", "TestPrefSpe.txt")
+mariage1 = gs_etudiants("prefEtu.txt", "prefSpe.txt")
+mariage2 = gs_parcours("prefEtu.txt", "prefSpe.txt")
 
-for i in range(0, 11):
+for i in range(0, 32):
 	print(i, " " ,mariage1[i])
 
 for i in range(0, 9):
