@@ -10,8 +10,7 @@ def pire_etu(affect, master, etu, m):
 				
 	return pire
 	
-def gs_etudiants(s1,s2):
-	m1, nbEtu, m2, nbPar = createMatrices(s1,s2)
+def gs_etudiants(m1, nbEtu, m2, nbPar):
 	aff = [False] * nbEtu	# liste de boolean qui indique si un étudiant a été affecté ou non 
 	nbProp = [0] * nbEtu # liste de nombre de propositions faites par chaque étudiant
 	
@@ -24,7 +23,7 @@ def gs_etudiants(s1,s2):
 		etu = aff.index(False)
 		
 		if nbProp[etu] < nbPar: # cet étudiant n'a pas proposé à tous les masters
-			master = m1[etu][1 + nbProp[etu]] # on recupere un master dans son ordre de préférence
+			master = m1[etu][nbProp[etu]] # on recupere un master dans son ordre de préférence
 			nbProp[etu] += 1
 			if (capMaster[master] < m2[nbPar][master]): # si ce master n'est pas encore plein on affecte ce master a l'etudiant
 				mariages[etu]=master
@@ -54,8 +53,7 @@ def gs_etudiants(s1,s2):
 	return mariages
 
 
-def gs_parcours(s1, s2):
-	m1, nbEtu, m2, nbPar = createMatrices(s1, s2)
+def gs_parcours(m1, nbEtu, m2, nbPar):
 	complet = [False] * nbPar # index: master, valeur: booléen indiquant si le master est complet ou non
 	nb_aff = [0] * nbPar # index: master, valeur: nombre d'étudiants affectés au master
 	cap_max = m2[nbPar] # index: master, valeur: capacité maximale
@@ -97,11 +95,4 @@ def gs_parcours(s1, s2):
 	
 	return mariages
 
-mariage1 = gs_etudiants("TestPrefEtu.txt", "TestPrefSpe.txt")
-mariage2 = gs_parcours("TestPrefEtu.txt", "TestPrefSpe.txt")
 
-for i in range(0, 11):
-	print(i, " " ,mariage1[i])
-
-for i in range(0, 9):
-	print(i, " " ,mariage2[i])

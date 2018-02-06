@@ -97,11 +97,4 @@ def gs_parcours(s1, s2):
 	
 	return mariages
 
-mariage1 = gs_etudiants("TestPrefEtu.txt", "TestPrefSpe.txt")
-mariage2 = gs_parcours("TestPrefEtu.txt", "TestPrefSpe.txt")
 
-for i in range(0, 11):
-	print(i, " " ,mariage1[i])
-
-for i in range(0, 9):
-	print(i, " " ,mariage2[i])
