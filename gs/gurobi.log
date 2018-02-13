@@ -44,3 +44,337 @@ Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
 
 Wrote result file 'affectation.sol'
 
+
+Gurobi 7.5.1 (linux64) logging started Tue Feb 13 16:17:27 2018
+
+
+Gurobi Optimizer version 7.5.1 build v7.5.1rc0 (linux64)
+Copyright (c) 2017, Gurobi Optimization, Inc.
+
+Read LP format model from file plne6.lp
+Reading time = 0.00 seconds
+obj: 20 rows, 33 columns, 66 nonzeros
+Optimize a model with 20 rows, 33 columns and 66 nonzeros
+Variable types: 0 continuous, 33 integer (33 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 8
+Presolve removed 6 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 14 rows, 27 columns, 54 nonzeros
+Variable types: 0 continuous, 27 integer (27 binary)
+
+Root relaxation: cutoff, 11 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0         8.00000    8.00000  0.00%     -    0s
+
+Explored 0 nodes (11 simplex iterations) in 0.09 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+
+Wrote result file 'affectation.sol'
+
+
+Gurobi 7.5.1 (linux64) logging started Tue Feb 13 16:23:02 2018
+
+
+Gurobi Optimizer version 7.5.1 build v7.5.1rc0 (linux64)
+Copyright (c) 2017, Gurobi Optimization, Inc.
+
+Read LP format model from file plne5.lp
+Reading time = 0.00 seconds
+obj: 20 rows, 44 columns, 88 nonzeros
+Optimize a model with 20 rows, 44 columns and 88 nonzeros
+Variable types: 0 continuous, 44 integer (44 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 10
+Presolve removed 3 rows and 4 columns
+Presolve time: 0.00s
+Presolved: 17 rows, 40 columns, 80 nonzeros
+Variable types: 0 continuous, 40 integer (40 binary)
+
+Root relaxation: cutoff, 14 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        10.00000   10.00000  0.00%     -    0s
+
+Explored 0 nodes (14 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 10 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+
+Wrote result file 'affectation.sol'
+
+
+Gurobi 7.5.1 (linux64) logging started Tue Feb 13 16:25:19 2018
+
+
+Gurobi Optimizer version 7.5.1 build v7.5.1rc0 (linux64)
+Copyright (c) 2017, Gurobi Optimization, Inc.
+
+Read LP format model from file plne5.lp
+Reading time = 0.00 seconds
+obj: 20 rows, 44 columns, 88 nonzeros
+Optimize a model with 20 rows, 44 columns and 88 nonzeros
+Variable types: 0 continuous, 44 integer (44 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 10
+Presolve removed 3 rows and 4 columns
+Presolve time: 0.00s
+Presolved: 17 rows, 40 columns, 80 nonzeros
+Variable types: 0 continuous, 40 integer (40 binary)
+
+Root relaxation: cutoff, 14 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0        10.00000   10.00000  0.00%     -    0s
+
+Explored 0 nodes (14 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 10 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+
+Wrote result file 'affectation.sol'
+
+
+Gurobi 7.5.1 (linux64) logging started Tue Feb 13 16:25:39 2018
+
+
+Gurobi Optimizer version 7.5.1 build v7.5.1rc0 (linux64)
+Copyright (c) 2017, Gurobi Optimization, Inc.
+
+Read LP format model from file plne4.lp
+Reading time = 0.00 seconds
+obj: 20 rows, 55 columns, 110 nonzeros
+Optimize a model with 20 rows, 55 columns and 110 nonzeros
+Variable types: 0 continuous, 55 integer (55 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 11
+Presolve removed 2 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 18 rows, 50 columns, 100 nonzeros
+Variable types: 0 continuous, 50 integer (50 binary)
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Wrote result file 'affectation.sol'
+
+
+Gurobi 7.5.1 (linux64) logging started Tue Feb 13 16:25:55 2018
+
+
+Gurobi Optimizer version 7.5.1 build v7.5.1rc0 (linux64)
+Copyright (c) 2017, Gurobi Optimization, Inc.
+
+Read LP format model from file plne6.lp
+Reading time = 0.00 seconds
+obj: 20 rows, 33 columns, 66 nonzeros
+Optimize a model with 20 rows, 33 columns and 66 nonzeros
+Variable types: 0 continuous, 33 integer (33 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 8
+Presolve removed 6 rows and 6 columns
+Presolve time: 0.00s
+Presolved: 14 rows, 27 columns, 54 nonzeros
+Variable types: 0 continuous, 27 integer (27 binary)
+
+Root relaxation: cutoff, 11 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0         8.00000    8.00000  0.00%     -    0s
+
+Explored 0 nodes (11 simplex iterations) in 0.00 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+
+Wrote result file 'affectation.sol'
+
+
+Gurobi 7.5.1 (linux64) logging started Tue Feb 13 16:26:17 2018
+
+
+Gurobi Optimizer version 7.5.1 build v7.5.1rc0 (linux64)
+Copyright (c) 2017, Gurobi Optimization, Inc.
+
+Read LP format model from file plne7.lp
+Reading time = 0.00 seconds
+obj: 20 rows, 22 columns, 44 nonzeros
+Optimize a model with 20 rows, 22 columns and 44 nonzeros
+Variable types: 0 continuous, 22 integer (22 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 8
+Presolve removed 6 rows and 4 columns
+Presolve time: 0.00s
+Presolved: 14 rows, 18 columns, 36 nonzeros
+Variable types: 0 continuous, 18 integer (18 binary)
+
+Root relaxation: cutoff, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0         8.00000    8.00000  0.00%     -    0s
+
+Explored 0 nodes (7 simplex iterations) in 0.01 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 8 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+
+Wrote result file 'affectation.sol'
+
+
+Gurobi 7.5.1 (linux64) logging started Tue Feb 13 16:26:40 2018
+
+
+Gurobi Optimizer version 7.5.1 build v7.5.1rc0 (linux64)
+Copyright (c) 2017, Gurobi Optimization, Inc.
+
+Read LP format model from file plne8.lp
+Reading time = 0.00 seconds
+obj: 20 rows, 11 columns, 22 nonzeros
+Optimize a model with 20 rows, 11 columns and 22 nonzeros
+Variable types: 0 continuous, 11 integer (11 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 7
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+
+Wrote result file 'affectation.sol'
+
+
+Gurobi 7.5.1 (linux64) logging started Tue Feb 13 16:27:14 2018
+
+
+Gurobi Optimizer version 7.5.1 build v7.5.1rc0 (linux64)
+Copyright (c) 2017, Gurobi Optimization, Inc.
+
+Read LP format model from file plne4.lp
+Reading time = 0.00 seconds
+obj: 20 rows, 55 columns, 110 nonzeros
+Optimize a model with 20 rows, 55 columns and 110 nonzeros
+Variable types: 0 continuous, 55 integer (55 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 11
+Presolve removed 2 rows and 5 columns
+Presolve time: 0.00s
+Presolved: 18 rows, 50 columns, 100 nonzeros
+Variable types: 0 continuous, 50 integer (50 binary)
+
+Root relaxation: cutoff, 0 iterations, 0.00 seconds
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 11 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+
+Wrote result file 'affectation.sol'
+
+
+Gurobi 7.5.1 (linux64) logging started Tue Feb 13 16:44:32 2018
+
+
+Gurobi Optimizer version 7.5.1 build v7.5.1rc0 (linux64)
+Copyright (c) 2017, Gurobi Optimization, Inc.
+
+Read LP format model from file plne8.lp
+Reading time = 0.00 seconds
+obj: 20 rows, 11 columns, 22 nonzeros
+Optimize a model with 20 rows, 11 columns and 22 nonzeros
+Variable types: 0 continuous, 11 integer (11 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Found heuristic solution: objective 7
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 8 available processors)
+
+Solution count 1: 7 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+
+Wrote result file 'affectation.sol'
+

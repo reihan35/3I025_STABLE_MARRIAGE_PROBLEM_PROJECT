@@ -27,7 +27,7 @@ def genere_lp(matriceEtu, matriceSpe, k):
 	
 	maximize = ""
 	for c in E:
-		maximize += " x"+ str(c[0]) + str(c[1]) + " +"
+		maximize += " x" + str(c[0]) + "_" + str(c[1]) + " +"
 	
 	maximize = maximize[:-1]
 	
@@ -37,7 +37,7 @@ def genere_lp(matriceEtu, matriceSpe, k):
 	
 	f.write("Subject To\n")
 	
-	for i in range(0, n):
+	for i in range(0, n): #pour chaque etudiant 
 		couples_i = []
 		for c in E:
 			if i == c[0]:
@@ -45,36 +45,37 @@ def genere_lp(matriceEtu, matriceSpe, k):
 				
 		sum_i = ""
 		for c in couples_i:
-			sum_i += " x" + str(c[0]) + str(c[1]) + " +"
+			sum_i += " x" + str(c[0]) + "_" + str(c[1]) + " +"
 		
 		sum_i = sum_i[:-2]
 		sum_i += " <= 1"
 		f.write("c" + str(i+1) + ":" + sum_i + "\n")
 		
-	for j in range(0, 9):
+	for j in range(0, 9): #pour chaque master
+		i += 1
 		couples_j = []
 		for c in E:
 			if j == c[1]:
 				couples_j.append(c)
-				
+
 		sum_j = ""
+		
 		for c in couples_j:
-			sum_j += " x" + str(c[0]) + str(c[1]) + " +"
+			sum_j += " x" + str(c[0]) + "_" + str(c[1]) + " +"
 		
 		sum_j = sum_j[:-2]
 		sum_j += " <= " + str(matriceSpe[len(matriceSpe)-1][j])
 		f.write("c" + str(i+1) + ":" + sum_j + "\n")
-		i += 1
 	
 	f.write("Bounds\n")
 	for c in E:
-		f.write("0 <= x" + str(c[0]) + str(c[1]) + " <= 1\n")
+		f.write("0 <= x" + str(c[0]) + "_" + str(c[1]) + " <= 1\n")
 		
 	
 	f.write("Binary\n")
 	x = ""
 	for c in E:
-		x += "x" + str(c[0]) + str(c[1]) + " "
+		x += "x" + str(c[0]) + "_" + str(c[1]) + " "
 	f.write(x + "\n")
 	f.write("End\n")
 	
@@ -83,4 +84,4 @@ def genere_lp(matriceEtu, matriceSpe, k):
 E = couples_util(matriceEtu, 6)
 print(E)
 
-genere_lp(matriceEtu, matriceMaster, 6)
+genere_lp(matriceEtu, matriceMaster, 4)

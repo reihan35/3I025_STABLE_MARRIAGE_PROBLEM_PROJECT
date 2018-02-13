@@ -11,16 +11,23 @@ import matplotlib.pyplot as plt
 x = []
 y = []
 
-for n in range(100, 1000):
+for n in range(200, 2200,200):
 	prefEtu = generePrefEtu(n)
 	prefSpe = generePrefParcours(n)
-	start = timeit.default_timer()
-#	file = open("tempscalculs.txt","a")
-	mariage = gs_etudiants(prefEtu, n, prefSpe, 9)
-	stop = timeit.default_timer()
+	somme=0
+	moy=0
+	
+	for i in range(0,11):
+		start = timeit.default_timer()
+	#	file = open("tempscalculs.txt","a")
+		mariage = gs_etudiants(prefEtu, n, prefSpe, 9)
+		stop = timeit.default_timer()
+		somme=somme+(stop-start)
+	
+	moy=somme/10
 	
 	x.append(n)
-	y.append(stop-start)
+	y.append(moy)
 #	file.write(str(n)+" "+str(stop-start)+"\n")
 #	file.close()
 
