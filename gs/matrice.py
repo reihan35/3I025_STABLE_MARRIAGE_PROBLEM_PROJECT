@@ -47,11 +47,9 @@ def createMatrices(s1, s2):
     # l.append(t) ajoute t a la fin de la liste l
     # l.index(t) renvoie la position de t dans l (s'assurer que t est dans l)
     # for s in l: s vaut successivement chacun des elements de l (pas les indices, les elements)
-
 '''
 m1, nbEtu, m2, nbParcours = createMatrices("prefEtu.txt", "prefSpe.txt")
 for line in m2:
 	for elem in line:
 		print(elem, end = " ")
-	print("")
-'''
+	print("")'''
