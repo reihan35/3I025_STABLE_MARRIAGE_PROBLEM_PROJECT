@@ -17,14 +17,14 @@ for n in range(200, 2200,200):
 	somme=0
 	moy=0
 	
-	for i in range(0,11):
+	for i in range(0,20):
 		start = timeit.default_timer()
 	#	file = open("tempscalculs.txt","a")
 		mariage = gs_etudiants(prefEtu, n, prefSpe, 9)
 		stop = timeit.default_timer()
 		somme=somme+(stop-start)
 	
-	moy=somme/10
+	moy=(somme*1.0)/10
 	
 	x.append(n)
 	y.append(moy)
