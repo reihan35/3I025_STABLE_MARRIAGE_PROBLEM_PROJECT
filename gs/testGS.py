@@ -4,12 +4,16 @@ import timeit
 #import os
 import matplotlib
 import matplotlib.pyplot as plt
+import math
 
 #if os.path.isfile("tempscalculs.txt"):
 #	os.remove("tempscalculs.txt")
 
 x = []
 y = []
+
+x_log = []
+y_log = []
 
 for n in range(200, 2200,200):
 	prefEtu = generePrefEtu(n)
@@ -24,12 +28,18 @@ for n in range(200, 2200,200):
 		stop = timeit.default_timer()
 		somme=somme+(stop-start)
 	
-	moy=(somme*1.0)/10
-	
+	moy=(somme*1.0)/20
+	log = math.log(moy)
+
+
 	x.append(n)
 	y.append(moy)
+
+	x_log.append(math.log(n))
+	y_log.append(log)
+
 #	file.write(str(n)+" "+str(stop-start)+"\n")
 #	file.close()
 
-plt.plot(x, y)
+plt.plot(x_log, y_log)
 plt.show()
