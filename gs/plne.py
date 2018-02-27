@@ -7,6 +7,8 @@ def calcule_util(etu,master,matrice):
 matriceEtu,nbEtu, matriceMaster,nbSpe = createMatrices("TestPrefEtu.txt","TestPrefSpe.txt")
 print(calcule_util(0,5,matriceEtu))
 
+
+
 def couples_util(matrice,k):
 	E = []
 	
@@ -84,4 +86,4 @@ def genere_lp(matriceEtu, matriceSpe, k):
 E = couples_util(matriceEtu, 6)
 print(E)
 
-genere_lp(matriceEtu, matriceMaster, 4)
+genere_lp(matriceEtu, matriceMaster, 5)
